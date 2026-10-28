@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collect Stars!!!</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+      }
+      #space_div {
+        font-size: 48px;
+      }
+      button {
+        height: 5vh;
+        width: 5vw;
+        border-radius: 10px;
+      }
+      #stats {
+        width: 30vw;
+        height: 10vh;
+        border: 1px solid black;
+        display: flex;
+        gap: 5vw;
+        justify-content: center;
+        align-items: center;
+      }
+      #score {
+        font-size: 24px;
+      }
+      #steps {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">title</h1>
+    <div id="space_div"></div>
+    <div id="buttons">
+      <button onclick="moveRocket(-1)" id="left">left</button>
+      <button onclick="restart()" id="restart">restart</button>
+      <button onclick="moveRocket(1)" id="right">right</button>
+    </div>
+    <div id="stats">
+      <div id="score"></div>
+      <div id="steps"></div>
+      <div id="high_score">No High Score</div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
